@@ -1,0 +1,6 @@
+#!/bin/bash
+(
+  SCRIPT_DIR="$(cd -P "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+  cd "${SCRIPT_DIR}" || exit 1
+  bundle exec ruby code_case.rb "$@"
+)
