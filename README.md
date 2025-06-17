@@ -1,8 +1,8 @@
 # code_case
 
-A tool for converting input strings into various case styles.
+A tool for converting input strings into various case styles, including both singular and plural forms.
 
-Supports conversion to MACRO_CASE, snake_case, UpperCamelCase, and lowerCamelCase.
+Supports conversion to MACRO_CASE, snake_case, UpperCamelCase, and lowerCamelCase, and automatically generates both singular and plural transformations for each case style.
 
 ## License
 
@@ -19,11 +19,15 @@ Or use the included alias script:
 Example:
 
 ```sh
-$ cc2 CodeCase
-CODE_CASE
-code_case
-CodeCase
-codeCase
+$ cc2 QuestEnemy
+quest_enemy
+questEnemy
+QuestEnemy
+QUEST_ENEMY
+quest_enemies
+questEnemies
+QuestEnemies
+QUEST_ENEMIES
 ```
 
 ## Environment
